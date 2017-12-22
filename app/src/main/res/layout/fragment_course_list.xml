@@ -1,0 +1,29 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context="edu.weber.mail.garrettbarker.cs3270a8.CourseListFragment">
+
+
+        <ListView
+            android:id="@+id/courseListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1dp"
+            android:divider="@color/black"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/addBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:backgroundTint="@color/green"
+            app:fabSize="normal"
+            app:srcCompat="@android:drawable/ic_input_add"
+            app:layout_anchorGravity="bottom|start"
+            app:layout_anchor="@id/courseListView"/>
+
+</android.support.design.widget.CoordinatorLayout>

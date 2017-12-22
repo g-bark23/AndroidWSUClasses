@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CS3270A8 Barker</string>
+    <string name="id">ID:</string>
+    <string name="editName">Name (Required):</string>
+    <string name="name">Name:</string>
+    <string name="courseCode">Course Code:</string>
+    <string name="start">Start At:</string>
+    <string name="end">End At:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

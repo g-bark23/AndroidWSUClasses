@@ -1,0 +1,104 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:orientation="vertical"
+    app:layout_collapseParallaxMultiplier="1.0"
+    tools:context="edu.weber.mail.garrettbarker.cs3270a8.CourseEditFragment">
+
+    <ScrollView
+        android:id="@+id/myScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/editIdTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/id" />
+
+            <EditText
+                android:id="@+id/editIdET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/editNameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/editName" />
+
+            <EditText
+                android:id="@+id/editNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/editCourseCodeTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/courseCode" />
+
+            <EditText
+                android:id="@+id/editCourseCodeET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/editStartTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/start" />
+
+            <EditText
+                android:id="@+id/editStartET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/editEndTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/end" />
+
+            <EditText
+                android:id="@+id/editEndET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/saveFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:backgroundTint="@color/green"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@android:drawable/ic_menu_save"
+        app:layout_anchorGravity="bottom|right|end"
+        app:layout_anchor="@id/myScrollView"
+        />
+</android.support.design.widget.CoordinatorLayout>
